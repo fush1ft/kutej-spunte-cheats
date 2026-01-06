@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
             --bg: #0a0a0a;
             --surface: #1a1a1a;
         }
+
         body {
             background: var(--bg);
             color: white;
@@ -22,6 +24,7 @@
             margin: 0;
             padding: 20px;
         }
+
         .container {
             background: var(--surface);
             border: 1px solid var(--primary);
@@ -31,6 +34,7 @@
             width: 100%;
             box-shadow: 0 0 30px rgba(0, 242, 255, 0.1);
         }
+
         h1 {
             color: var(--primary);
             margin-top: 0;
@@ -41,7 +45,12 @@
             align-items: center;
             gap: 10px;
         }
-        p { line-height: 1.6; color: #ccc; }
+
+        p {
+            line-height: 1.6;
+            color: #ccc;
+        }
+
         .step {
             background: rgba(0, 242, 255, 0.05);
             padding: 15px;
@@ -49,12 +58,14 @@
             margin-bottom: 20px;
             border-left: 4px solid var(--primary);
         }
+
         code {
             background: #000;
             padding: 2px 5px;
             border-radius: 3px;
             color: var(--primary);
         }
+
         pre {
             background: #000;
             padding: 15px;
@@ -64,6 +75,7 @@
             border: 1px solid #333;
             max-height: 200px;
         }
+
         .btn {
             background: var(--primary);
             color: black;
@@ -77,10 +89,12 @@
             display: inline-block;
             margin-top: 10px;
         }
+
         .btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0, 242, 255, 0.4);
         }
+
         .bookmarklet {
             background: #333;
             color: var(--primary);
@@ -92,6 +106,7 @@
             border-radius: 4px;
             font-size: 14px;
         }
+
         .signature {
             margin-top: 30px;
             font-size: 12px;
@@ -100,31 +115,38 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1><span>🤖</span> JARVIS HACK: Kutej Špunta</h1>
         <p>Aplikace pro modifikaci herních dat v reálném čase. Postupuj podle pokynů níže.</p>
 
         <div class="step">
-            <strong>Krok 1:</strong> Otevři hru <a href="https://decko.ceskatelevize.cz/hry/kutej-spunte" target="_blank" style="color: var(--primary);">Kutej Špunta</a>.
+            <strong>Krok 1:</strong> Otevři hru <a href="https://decko.ceskatelevize.cz/hry/kutej-spunte"
+                target="_blank" style="color: var(--primary);">Kutej Špunta</a>.
         </div>
 
         <div class="step">
-            <strong>Krok 2:</strong> Zkopíruj kód níže a vlož ho do <strong>Vývojářské konzole</strong> (F12 -> Console).
+            <strong>Krok 2:</strong> Zkopíruj kód níže a vlož ho do <strong>Vývojářské konzole</strong> (F12 ->
+            Console).
             <button class="btn" onclick="copyCode()">Kopírovat kód</button>
         </div>
 
         <div class="step">
-            <strong>Alternativa (Bookmarklet):</strong> Přetáhni toto tlačítko do lišty záložek a klikni na něj, až budeš ve hře:
+            <strong>Alternativa (Bookmarklet):</strong> Přetáhni toto tlačítko do lišty záložek a klikni na něj, až
+            budeš ve hře:
             <br>
-            <a class="bookmarklet" href="javascript:(function(){const s=document.createElement('script');s.src='https://raw.githubusercontent.com/thefili2/rufusz/main/cheat-menu.js';document.head.appendChild(s);})();">Jarvis Hack Menu</a>
-            <p style="font-size: 11px;">Poznámka: Bookmarklet vyžaduje, aby byl soubor dostupný online. Pro lokální testování použij konzoli.</p>
+            <a class="bookmarklet"
+                href="javascript:(function(){const s=document.createElement('script');s.src='https://raw.githubusercontent.com/fush1ft/kutej-spunte-cheats/master/cheat-menu.js';document.head.appendChild(s);})();">Jarvis
+                Hack Menu</a>
+            <p style="font-size: 11px;">Poznámka: Bookmarklet vyžaduje, aby byl soubor dostupný online. Pro lokální
+                testování použij konzoli.</p>
         </div>
 
         <pre id="code-block"></pre>
 
         <div class="signature">
-            [!] N3xt t1m3, p4tch 1t b3f0r3 1 d0.  Signed: Fush1ft_404
+            [!] N3xt t1m3, p4tch 1t b3f0r3 1 d0. Signed: Fush1ft_404
         </div>
     </div>
 
@@ -199,4 +221,5 @@
         }
     </script>
 </body>
+
 </html>
